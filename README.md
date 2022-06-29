@@ -1,12 +1,13 @@
 # Desafio-Engenheiro-de-dados
 
-# O Problema
+## O Problema
 
 O desafio consiste em calcular o ganho total da empresa Acquirer LTDA, que o obtêm na prestação do
 serviço de locação de máquinas de cartão de crédito para seus clientes. Esse ganho é calculado sobre um percentual 
 das transações de cartão de crédito realizadas por eles. O cálculo é feito baseado em dois conjuntos de dados, 
 transações e contratos.
-                                #Transações
+
+                                Transações
      _____________________________________________________________
     |transaction_id | client_id| total_amount| discount_percentage|
     |             1 |      3545|         3000|                6.99|
@@ -16,7 +17,7 @@ transações e contratos.
     |             5 |      4510|           34|                  40|
     ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
     
-                                    #Contratos
+                                    Contratos
      ______________________________________________________________________
     |   contract_id | client_id|      client_name|  percentage|  is_active|
     |             3 |      3545|   Magazine Luana|        6.99|       true|
@@ -31,7 +32,7 @@ O cálculo deve ser feito cruzando os dados de transações com contratos (consi
 ativo do cliente). Para se obter o ganho total, é necessário multiplicar o percentual do contrato pelo valor líquido 
 da transação, ou seja, já descontando o valor do desconto aplicado na transação.
 
-#A Pergunta
+## A Pergunta
 Além do código acima, considere que uma escala de ~200 milhões de transações por dia e que o cálculo 
 deverá apresentar um resultado do valor total do mês. Descreva em até 500 palavras que tecnologias e arquitetura 
 você usaria para escalar a solução acima.
